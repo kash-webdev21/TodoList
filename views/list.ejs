@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+</head>
+<body style="background-color: antiquewhite;">
+    <h1 style="text-align: center; margin-top: 15%;"> Date is : <%= date%> </h1>
+    <h2 style="text-align: center; color: olivedrab; "> <i> TodoList</i> </h1>
+   
+
+    <form method="post" style="text-align: center; margin-top: 5%;">
+
+
+        <input style="text-align: center; color: red; "type="text" name="itm" placeholder="Add">
+        <!-- <label name="add">Add</label> -->
+
+
+
+    </form>
+
+    <% for (var i = 0; i < item.length; i++) { %>
+
+    <ul style="margin-left: 45%;">
+        
+            <li style="margin-top: 5%; color:mediumslateblue; margin-left:1rem;"> 
+                <%=item[i]%>
+    
+            </li>
+       
+        
+        
+    </ul>
+
+<% } %>
+   
+    
+</body>
+</html>
